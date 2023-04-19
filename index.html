@@ -12,33 +12,33 @@
 <body>
     <!-- Encabezado de la tienda online -->
     <header>
-        <a href="#">Logo</a>
-        <h1>Tienda Online</h1>
+        <a href="#" class="header-logo">Logo</a>
+        <h1 class="header-titulo">Tienda Online</h1>
         <div>
             <!-- Menú de navegación principal -->
-            <nav>
-                <ul>
-                    <li><a href="#">Ir al inicio</a></li>
-                    <li><a href="#">Categorías</a>
+            <nav class="header-nav-principal">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Ir al inicio</a></li>
+                    <li class="menu-item-category"><a href="#">Categorías</a>
                         <!-- Submenú desplegable de categorías -->
-                        <ul>
-                            <li><a href="#">Ropa para Hombres</a></li>
-                            <li><a href="#">Ropa para Mujeres</a></li>
-                            <li><a href="#">Ropa para Niños</a></li>
+                        <ul class="item-category">
+                            <li class="category-hombres"><a href="#">Ropa para Hombres</a></li>
+                            <li class="categoty-mujeres"><a href="#">Ropa para Mujeres</a></li>
+                            <li class="category-niños"><a href="#">Ropa para Niños</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="menu-item"><a href="#">Acerca de</a></li>
+                    <li class="menu-item"><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </div>
         <div>
             <!-- Menú de navegación secundario -->
-            <nav>
+            <nav class="header-nav-secundaria">
                 <ul>
                     <li><a href="#">Iniciar Sesión</a></li>
-                    <input type="text">
-                    <button type="submit">Buscar</button>
+                    <input type="text" placeholder="Buscar productos" class="buscar-productos">
+                    <button type="submit" class="btn-buscar">Buscar</button>
                     <li><a href="#">Carrito de compras</a></li>
                 </ul>
             </nav>
@@ -46,27 +46,40 @@
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <section>
+        <section class="main-banner">
             <img src="img/banner1.jpg" alt="Banner">
         </section>
-        <div>
+        <div class="main-seccion-hombres">
             <section>
                 <h3>Ropa para Hombres</h3>
+                <div class="producto-hombre">
+                    <div class="imagen">
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2016272767174/2016272767174_2.jpg"
+                            alt="Polo Couldbreak">
+                    </div>
+                    <div class="marca">COULDBREAK</div>
+                    <div class="descripcion">POLO CLOUDBREAK PARA HOMBRE MANGA CORTA PRINT ALGODÓN ETORTA 6</div>
+                    <div class="precio">
+                        <ul>
+                            <li>S/17.99</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
-        <div>
+        <div class="main-seccion-mujeres">
             <section>
                 <h3>Ropa para Mujeres</h3>
             </section>
         </div>
-        <div>
+        <div class="main-seccion-niños">
             <section>
                 <h3>Ropa para Niños</h3>
             </section>
         </div>
     </main>
     <!-- Pie de página de la tienda online -->
-    <footer>
+    <footer class="footer-pie-pagina">
         <div>
             <div>
                 <a href="#">Logo</a>
